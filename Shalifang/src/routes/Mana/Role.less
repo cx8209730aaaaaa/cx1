@@ -1,0 +1,64 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+.table_operations button {
+    margin-bottom: 16px;
+}
+.table_operations>Button {
+    margin-right: 8px;
+}
+
+.tableList {
+    .tableListOperator {
+        margin-bottom: 16px;
+        button {
+            margin-right: 8px;
+        }
+    }
+}
+.hide{display:none ;}
+.coltdsn{overflow : hidden;text-overflow: ellipsis;display: -webkit-box;
+-webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.bottom10{margin-bottom: 10px;}
+.w50left{width: 50%;display: inline-block;overflow: hidden;}
+.optionss{width: 20%;float: left;text-align: center;}
+.w100b{width: 100%;}
+.text-editor-container img{max-width: 100%;}
+.ant-table td { white-space: nowrap; }
+.timepackers{width: 100%;border: 1px solid red;}
+.tableListForm {
+     :global {
+        .ant-form-item {
+            margin-bottom: 24px;
+            margin-right: 0;
+            display: flex;
+            >.ant-form-item-label {
+                width: auto;
+                line-height: 32px;
+                padding-right: 8px;
+            }
+            .ant-form-item-control {
+                line-height: 32px;
+            }
+        }
+        .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+    }
+    .submitButtons {
+        white-space: nowrap;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: @screen-lg) {
+    .tableListForm :global(.ant-form-item) {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: @screen-md) {
+    .tableListForm :global(.ant-form-item) {
+        margin-right: 8px;
+    }
+}
+.hide{display: none !important;}
